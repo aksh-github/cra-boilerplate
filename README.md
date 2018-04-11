@@ -13,3 +13,6 @@ This include following
   bootstrap 4
 
 For ajax you can use fetch (no mod required) or may be you can install library like Bluebird.
+
+For dev run: npm start
+For creating a build: npm run build
