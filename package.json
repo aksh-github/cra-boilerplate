@@ -2,6 +2,10 @@
   "name": "cra-bootstrap",
   "version": "0.1.0",
   "private": true,
+  "description": "Great boilerplate to start any professional project",
+  "keywords": ["react", "react-router", "lazy load", "sass", "bootstrap"],
+  "author": "Akshay B",
+  "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.1.0",
     "jquery": "^3.3.1",
