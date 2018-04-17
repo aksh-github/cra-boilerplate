@@ -3,7 +3,7 @@ import React  from 'react';
 
 import 'styles/cssloader.scss';
 
-const CssLoader = ({error, pastDelay})=>
+const CssLoader = ()=>
 {	
 	return <div className="sk-three-bounce">
         <div className="sk-child sk-bounce1"></div>

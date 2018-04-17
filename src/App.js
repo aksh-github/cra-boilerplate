@@ -1,35 +1,33 @@
 
 import React, { Component } from 'react';
-import { Route, Switch, NavLink } from 'react-router-dom';
-import Loadable from 'components/Loadable';
+import { Route, Switch } from 'react-router-dom';
+
+import Loadable from 'views/common/Loadable';
+import Header from 'views/common/Header';
+
 import consts from 'utils/constants';
 
 import 'styles/App.css';
 
-
 class App extends Component
 {
+
 	render() 
 	{
+		//const pageContainerPath = 'views/containers/';
+
 		return (
 		<div className="App container">
 		
-			<header className="App-header">		
-				<h1 className="App-title">Welcome to CRA</h1>
-				<p>
-					<NavLink to={consts.paths[0].path} activeClassName="active" exact> { consts.paths[0].name } </NavLink>
-					<NavLink to={consts.paths[1].path} activeClassName="active" exact> { consts.paths[1].name } </NavLink>
-					<NavLink to={consts.paths[2].path} activeClassName="active" exact> { consts.paths[2].name } </NavLink>
-				</p>
-			</header>
-
+			<Header consts={consts} />
+			
 			<main>
 				<Switch>
 					<Route exact path={consts.paths[0].path} render={						
 						(props)=>
 						{
 							const Home = Loadable({
-								loader: () => import('containers/HomeContainer')
+								loader: () => import('views/containers/HomeContainer')
 							})
 		
 							return <Home />
@@ -39,7 +37,7 @@ class App extends Component
 						(props)=>
 						{
 							const Market = Loadable({
-								loader: () => import('containers/MarketContainer')
+								loader: () => import('views/containers/MarketContainer')
 							})
 		
 							return <Market />
@@ -49,7 +47,7 @@ class App extends Component
 						(props)=>
 						{
 							const Schedule = Loadable({
-								loader: () => import('containers/ScheduleContainer')
+								loader: () => import('views/containers/ScheduleContainer')
 							})
 		
 							return <Schedule />

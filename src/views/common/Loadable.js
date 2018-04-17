@@ -1,7 +1,7 @@
 
 import rLoadable from 'react-loadable';
 
-import LoadingCompo from 'components/LoadingComponent';
+import LoadingCompo from 'views/common/LoadingComponent';
 
 
 const Loadable = (opts) =>

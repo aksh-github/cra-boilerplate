@@ -5,6 +5,10 @@ import registerServiceWorker from './registerServiceWorker';
 
 import { BrowserRouter as Router } from 'react-router-dom';
 
+//import $ from 'jquery';
+//import 'popper.js';
+import 'bootstrap';
+
 import 'bootstrap/dist/css/bootstrap.css';
 import 'styles/index.css';
 

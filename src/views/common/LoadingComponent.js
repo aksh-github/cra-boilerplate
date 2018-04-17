@@ -1,6 +1,6 @@
 
 import React from 'react';
-import CssLoader from 'components/CssLoader';
+import CssLoader from 'views/common/CssLoader';
 
 const LoadingComponent = ({isLoading, error, pastDelay}) => {
     if (isLoading) 
