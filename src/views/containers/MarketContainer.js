@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import _debounce from 'lodash/debounce';
 
+import IndiaMarket from 'views/components/IndiaMarket';
+
 export default class MarketContainer extends React.Component 
 {
 	constructor(props, context)
@@ -50,7 +52,8 @@ export default class MarketContainer extends React.Component
 	{
 		return <div className="market">
 			<h2>Market</h2>
-			<hr />			
+			<hr />
+			<IndiaMarket data={ {'bse': 36000, 'nse': 11900} } lastUpdated={new Date()} loading={false} />			
 		</div>
 	}
 	
